@@ -46,4 +46,4 @@ client.on("message", message => {
 
 });
 
-client.login(ayarlar.token)
+client.login(ayarlar.TOKEN)
