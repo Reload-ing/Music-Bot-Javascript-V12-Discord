@@ -1,8 +1,8 @@
 {
   "//1": "v12 Müzik Botu",
-  "name": "ArdaDemr Müzik Bot",
+  "name": "V1",
   "version": "0.0.1",
-  "description": "ArdaDemr Müzik Bot",
+  "description": "V1",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
