@@ -1,3 +1,4 @@
+  
 const { Util } = require("discord.js");
 const { YOUTUBE_API_KEY } = require("../ayarlar.json");
 const ytdl = require("ytdl-core");
@@ -84,14 +85,14 @@ module.exports = {
            thumbnail : songData.videoDetails.thumbnails[0].url,
            author : songData.videoDetails.author.name,
            wiews : songData.videoDetails.viewCount,
-          likes : {
-         };
+  
+        };
 
       } catch (error) {
         console.error(error)
       }
     }
-
+    
     if(serverQueue) {
       serverQueue.songs.push(song)
       return serverQueue.textChannel.send( new Discord.MessageEmbed()
@@ -120,6 +121,6 @@ module.exports = {
         return message.channel.send({embed: {"description": `Kanala giriş yapamıyorum.: ${error}`, "color": "#ffc300"}}).catch(console.error);
       }
     }
-
+    
   }
 };
