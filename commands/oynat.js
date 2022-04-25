@@ -1,4 +1,3 @@
-  
 const { Util } = require("discord.js");
 const { YOUTUBE_API_KEY } = require("../ayarlar.json");
 const ytdl = require("ytdl-core");
